@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MLInsight — media belajar interaktif pengantar Machine Learning.">
+  <title>MLInsight | Machine Learning Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#beranda" aria-label="MLInsight beranda">
+      <span class="brand-icon">✳</span><span><strong>ML<span>Insight</span></strong><small>Machine Learning Explorer</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+    <nav id="navMenu">
+      <a class="active" href="#beranda">Beranda</a>
+      <a href="#materi">Materi</a>
+      <a href="#jenis">Jenis ML</a>
+      <a href="#simulasi">Simulasi</a>
+      <a href="#studi-kasus">Studi Kasus</a>
+      <a href="#tentang">Tentang</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Ganti tema">☼</button>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> PENGANTAR KECERDASAN BUATAN</div>
+        <h1>Introduction to<br><span>Machine Learning</span></h1>
+        <p>Jelajahi konsep dasar, jenis, algoritma, dan penerapan Machine Learning secara interaktif. Dibuat sebagai media belajar berdasarkan topik webinar Informatika UNIB.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#materi">▤ &nbsp; Mulai Belajar</a>
+          <a class="button outline" href="#studi-kasus">▷ &nbsp; Lihat Studi Kasus</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>3</strong><span>Jenis utama ML</span></div>
+          <div><strong>4+</strong><span>Algoritma populer</span></div>
+          <div><strong>∞</strong><span>Peluang penerapan</span></div>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi alur machine learning">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="node node-data"><span>▦</span><b>DATA</b><small>Input & fitur</small></div>
+        <div class="node node-train"><span>⌁</span><b>TRAINING</b><small>Belajar pola</small></div>
+        <div class="brain-card"><div class="brain">✳</div><b>ML MODEL</b><small>Learn · Predict · Improve</small><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+        <div class="node node-predict"><span>⌁</span><b>PREDICTION</b><small>Hasil model</small></div>
+        <div class="node node-output"><b>OUTPUT</b><p><i class="dot blue"></i> Klasifikasi</p><p><i class="dot green"></i> Regresi</p><p><i class="dot purple"></i> Clustering</p></div>
+        <div class="connector c1"></div><div class="connector c2"></div><div class="connector c3"></div>
+      </div>
+    </section>
+
+    <section class="quick-links" aria-label="Ringkasan topik">
+      <a href="#materi" class="quick-card"><span class="quick-icon blue-bg">▤</span><span><b>Konsep Dasar</b><small>Pengertian, tujuan, dan manfaat Machine Learning.</small></span><em>›</em></a>
+      <a href="#jenis" class="quick-card"><span class="quick-icon violet-bg">▤</span><span><b>Jenis Machine Learning</b><small>Supervised, Unsupervised, dan Reinforcement Learning.</small></span><em>›</em></a>
+      <a href="#algoritma" class="quick-card"><span class="quick-icon blue-bg">⚙</span><span><b>Algoritma Populer</b><small>Linear Regression, Decision Tree, k-NN, dan lainnya.</small></span><em>›</em></a>
+      <a href="#simulasi" class="quick-card"><span class="quick-icon green-bg">▥</span><span><b>Simulasi Interaktif</b><small>Coba prediksi sederhana dengan data contoh.</small></span><em>›</em></a>
+      <a href="#studi-kasus" class="quick-card"><span class="quick-icon orange-bg">♧</span><span><b>Penerapan Nyata</b><small>Contoh penggunaan di berbagai bidang.</small></span><em>›</em></a>
+    </section>
+
+    <section class="content-grid" id="materi">
+      <article class="panel intro-panel">
+        <div class="section-heading"><span class="heading-icon">✳</span><div><h2>Apa itu Machine Learning?</h2><p>Konsep dasar yang perlu kamu pahami</p></div></div>
+        <p class="body-copy"><strong>Machine Learning (ML)</strong> adalah cabang dari Artificial Intelligence (AI) yang memungkinkan komputer mempelajari pola dari data untuk membuat prediksi atau keputusan, tanpa harus diprogram dengan aturan khusus untuk setiap situasi.</p>
+        <div class="goal-box"><span class="goal-icon">◎</span><div><h3>Tujuan Machine Learning</h3><ul><li>Membangun model yang dapat belajar dari data.</li><li>Melakukan prediksi atau klasifikasi.</li><li>Mendukung pengambilan keputusan.</li><li>Membantu menyelesaikan masalah di dunia nyata.</li></ul></div></div>
+        <div class="definition-row"><div><b>Data</b><small>Contoh yang digunakan untuk belajar.</small></div><span>→</span><div><b>Model</b><small>Pola yang dipelajari algoritma.</small></div><span>→</span><div><b>Prediksi</b><small>Hasil saat model digunakan.</small></div></div>
+      </article>
+
+      <article class="panel" id="jenis">
+        <div class="section-heading split-heading"><div class="heading-left"><span class="heading-icon">▱</span><div><h2>Jenis Machine Learning</h2><p>Tiga pendekatan yang paling umum</p></div></div><a href="#algoritma" class="text-link">Pelajari algoritma →</a></div>
+        <div class="types-grid">
+          <div class="type-card supervised"><div class="type-symbol">⌘</div><h3>Supervised Learning</h3><p>Belajar dari data berlabel untuk memprediksi output baru.</p><b>Contoh:</b><ul><li>Klasifikasi email spam</li><li>Prediksi harga rumah</li></ul></div>
+          <div class="type-card unsupervised"><div class="type-symbol">◉</div><h3>Unsupervised Learning</h3><p>Menemukan pola atau kelompok dalam data tanpa label.</p><b>Contoh:</b><ul><li>Segmentasi pelanggan</li><li>Pengelompokan dokumen</li></ul></div>
+          <div class="type-card reinforcement"><div class="type-symbol">♙</div><h3>Reinforcement Learning</h3><p>Belajar melalui tindakan, umpan balik, dan hadiah dari lingkungan.</p><b>Contoh:</b><ul><li>AI permainan</li><li>Robotika</li></ul></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="content-grid lower-grid" id="simulasi">
+      <article class="panel simulator-panel">
+        <div class="section-heading"><span class="heading-icon violet-icon">▥</span><div><h2>Simulasi Prediksi Bunga Iris</h2><p>Ubah ukuran bunga, lalu jalankan simulasi.</p></div></div>
+        <p class="body-copy compact">Masukkan ukuran sepal dan petal. Demo ini menggunakan aturan sederhana yang terinspirasi dari dataset Iris, bukan model machine learning yang benar-benar dilatih.</p>
+        <form id="irisForm" class="iris-form">
+          <label>Sepal Length (cm)<input id="sepalLength" type="number" min="4" max="8" step="0.1" value="5.1" required></label>
+          <label>Sepal Width (cm)<input id="sepalWidth" type="number" min="2" max="4.5" step="0.1" value="3.5" required></label>
+          <label>Petal Length (cm)<input id="petalLength" type="number" min="1" max="7" step="0.1" value="1.4" required></label>
+          <label>Petal Width (cm)<input id="petalWidth" type="number" min="0.1" max="2.5" step="0.1" value="0.2" required></label>
+          <button class="button primary predict-button" type="submit">▷ &nbsp; Prediksi Jenis Bunga</button>
+        </form>
+        <div class="prediction-result" id="predictionResult" aria-live="polite"><span class="flower">✿</span><div><small>HASIL SIMULASI</small><h3>Iris-setosa</h3><p>Nilai petal yang kecil paling dekat dengan contoh Iris-setosa.</p></div></div>
+      </article>
+
+      <article class="panel chart-panel">
+        <div class="section-heading split-heading"><div class="heading-left"><span class="heading-icon">◔</span><div><h2>Visualisasi Data Iris</h2><p>Contoh sebaran data bunga berdasarkan ukuran petal</p></div></div><span class="chart-label">DATA CONTOH</span></div>
+        <div class="chart-legend"><span><i class="dot red"></i> Iris-setosa</span><span><i class="dot blue"></i> Iris-versicolor</span><span><i class="dot green"></i> Iris-virginica</span></div>
+        <div class="scatter-wrap"><svg id="scatterChart" viewBox="0 0 600 290" role="img" aria-label="Grafik sebaran panjang dan lebar petal"></svg></div>
+        <p class="chart-note">Visualisasi ilustratif untuk pembelajaran, bukan data pengukuran lengkap.</p>
+      </article>
+    </section>
+
+    <section class="panel algorithms-panel" id="algoritma">
+      <div class="section-heading split-heading"><div class="heading-left"><span class="heading-icon">⚙</span><div><h2>Algoritma Populer</h2><p>Beberapa metode yang sering digunakan</p></div></div><span class="chart-label">PILIH SESUAI MASALAH</span></div>
+      <div class="algorithm-grid">
+        <div class="algorithm-card"><span class="algo-number">01</span><h3>Linear Regression</h3><p>Memprediksi nilai numerik, misalnya harga rumah berdasarkan luas dan lokasi.</p><span class="tag">Regresi</span></div>
+        <div class="algorithm-card"><span class="algo-number">02</span><h3>Decision Tree</h3><p>Membuat keputusan melalui serangkaian pertanyaan atau percabangan.</p><span class="tag">Klasifikasi / Regresi</span></div>
+        <div class="algorithm-card"><span class="algo-number">03</span><h3>k-Nearest Neighbors</h3><p>Menentukan kelas data baru berdasarkan tetangga terdekatnya.</p><span class="tag">Klasifikasi</span></div>
+        <div class="algorithm-card"><span class="algo-number">04</span><h3>K-Means</h3><p>Mengelompokkan data menjadi sejumlah cluster berdasarkan kemiripan.</p><span class="tag">Clustering</span></div>
+      </div>
+    </section>
+
+    <section class="panel case-panel" id="studi-kasus">
+      <div class="section-heading split-heading"><div class="heading-left"><span class="heading-icon orange-icon">▣</span><div><h2>Studi Kasus Penerapan Machine Learning</h2><p>Contoh bagaimana ML membantu menyelesaikan masalah</p></div></div></div>
+      <div class="case-grid">
+        <article class="case-card"><div class="case-visual finance">▤</div><div class="case-content"><span class="case-category">KEUANGAN</span><h3>Deteksi Transaksi Mencurigakan</h3><p>Model mempelajari pola transaksi untuk menandai aktivitas yang tidak biasa agar dapat ditinjau lebih lanjut.</p><button class="learn-more" data-case="finance">Lihat alur →</button></div></article>
+        <article class="case-card"><div class="case-visual health">✚</div><div class="case-content"><span class="case-category">KESEHATAN</span><h3>Analisis Citra Medis</h3><p>Model pengolahan citra dapat membantu tenaga medis menemukan pola pada gambar, dengan validasi ahli.</p><button class="learn-more" data-case="health">Lihat alur →</button></div></article>
+        <article class="case-card"><div class="case-visual retail">▦</div><div class="case-content"><span class="case-category">BISNIS</span><h3>Rekomendasi Produk</h3><p>Sistem menganalisis preferensi dan interaksi pengguna untuk menyarankan produk yang relevan.</p><button class="learn-more" data-case="retail">Lihat alur →</button></div></article>
+      </div>
+      <div class="case-detail" id="caseDetail" hidden aria-live="polite"></div>
+    </section>
+
+    <section class="closing-banner" id="tentang"><div class="closing-icon">✳</div><div><h2>Mulai dari data, temukan pola, buat prediksi.</h2><p>Machine Learning adalah alat bantu. Kualitas data, evaluasi, dan pemahaman konteks tetap penting.</p></div><a class="button light-button" href="#beranda">Kembali ke atas ↑</a></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#beranda"><span class="brand-icon">✳</span><span><strong>ML<span>Insight</span></strong><small>Machine Learning Explorer</small></span></a><p>Media pembelajaran mandiri · Informatika UNIB</p><p class="disclaimer">Materi ini merupakan pengantar umum berdasarkan topik webinar, bukan transkrip atau ringkasan terverifikasi dari keseluruhan video.</p><span>© 2026 MLInsight</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
